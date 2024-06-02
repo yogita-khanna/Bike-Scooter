@@ -17,7 +17,7 @@ const LeftSidebar = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleLogout = async () => {
-    await axios.get("http://localhost:8585/api/user/logout");
+    await axios.get("https://bike-scooter.vercel.app/api/user/logout");
 
     localStorage.clear();
     navigate("/");

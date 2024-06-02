@@ -25,7 +25,7 @@ const FeedbackForm = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:8585/api/feedback", {
+      const response = await fetch("https://bike-scooter.vercel.app/api/feedback", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

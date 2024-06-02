@@ -18,7 +18,7 @@ const Signup = () => {
   
     try {
       const response = await axios.post(
-        "http://localhost:8585/api/user/register",
+        "https://bike-scooter.vercel.app/api/user/register",
         { username: name, gname: email, pw: Pw }  // Use correct field names
       );
       

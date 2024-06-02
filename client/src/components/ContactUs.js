@@ -23,7 +23,7 @@ const ContactUs = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post("http://localhost:8585/api/contact", {
+      const response = await axios.post("https://bike-scooter.vercel.app/api/contact", {
         name,
         email,
         message,

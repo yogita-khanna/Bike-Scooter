@@ -30,10 +30,10 @@ const BillGenerationForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
+    
     try {
       const response = await axios.post(
-        "http://localhost:8585/api/billGeneration",
+        "https://bike-scooter.vercel.app/api/billGeneration",
         formData
       );
 
