@@ -61,7 +61,7 @@ app.use(session({
 
 
 // Connect to MongoDB
-mongoose.connect("mongodb+srv://khannayogita723:yogita@cluster0.qvjejhq.mongodb.net/?retryWrites=true&w=majority", {
+mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
